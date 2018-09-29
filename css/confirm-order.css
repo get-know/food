@@ -1,0 +1,477 @@
+@import url("base.css");
+
+body{
+	background-color: #f4f4f4;
+}
+/*header start*/
+header{
+	overflow-x: visible;
+	width: 100%;
+	height: 2.5rem;
+	padding:0 .25rem;
+	background-color: #0f92ee;
+}
+header .title{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:99999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding:0 .25rem;
+	height: .98rem;	
+	color:#fff;	
+	background-color: #0f92ee;
+}
+header .title >span{
+	font-size: .35rem;
+}
+header .title > a{
+	display: block;
+	color:#fff;
+}
+header .title > a > i{
+	float: left;
+	font-size: .35rem;
+}
+header .order-info{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+	justify-content: space-around;
+	height: 1.4rem;
+	margin-top: .98rem;
+	font-size: .26rem;
+}
+header .order-info .address1{
+	color:#d8e9fb;
+}
+header .order-info .address1 > span{
+	display: inline-block;
+	height: .4rem;
+	margin-left: .05rem;
+	line-height: .4rem;
+	padding:0 .05rem;
+	border:.01rem solid #ddd;
+}
+header .order-info .address2{
+	color:#eff6fd;
+	font-size: .3rem;
+}
+header .order-info .name{
+	margin-top: .2rem;
+	color:#f7fafe;
+}
+header .order-info .name > .phone{
+	margin-left: .5rem;
+}
+
+.wallet{
+	position: relative;
+	left: 0;
+	top:.2rem;
+	width: 100%;
+	z-index:9999;
+	padding:.2rem .25rem;	
+	border-radius:.15rem;
+	background-color: #fff;
+	box-shadow: 0px 2px 13px 0px rgba(207, 207, 207, 0.54)
+}
+.wallet >a{
+	display: block;
+}
+.wallet p{
+	height: .7rem;
+	line-height: .7rem;
+}
+.wallet p.num,
+ p.desc{
+	display: flex;
+	justify-content: space-between;	
+}
+.wallet p.num{
+	border-bottom:.02rem solid #eee;
+}
+.wallet p.num > span{
+	/*width: 20%;*/
+	font-size: .26rem;
+	color:#777;
+}
+
+.wallet p.desc > span{
+	/*width: 20%;*/
+	font-size: .26rem;
+	color:#666;
+}
+.wallet p.num > span.time,
+.wallet p.desc > span.pay-method{
+	color: #0f92ee;
+}
+.wallet p.num > span.time > i,
+.wallet p.desc > span.pay-method > i{
+	color: #777;
+	vertical-align: middle;
+}
+
+/*header end*/
+
+/*main start*/
+.main{
+	height: 9rem;	
+	padding:0 .25rem;
+}
+.main.on{
+	overflow: hidden;
+}
+.main .order-desc{
+	width: 100%;
+	/*height: 9rem;*/
+	padding:.1rem .25rem;
+	margin-bottom:1.5rem;
+	margin-top: 1.15rem;
+	border-radius:.15rem;
+	background-color: #fff;
+	box-shadow: 0px 2px 13px 0px rgba(207, 207, 207, 0.54)
+}
+.main .order-desc > li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding:.22rem 0.25rem;
+	border-bottom:.01rem solid #eee;
+	font-size: .26rem;
+	color:#7e7e7e;
+}
+.main .order-desc > li:first-child{
+	padding:.3rem .25rem;
+	font-size: .28rem;
+	font-weight: bold;
+	color:#333;
+}
+.main .order-desc > li:last-child{
+	border-bottom:none;
+}
+.main .order-desc > li .goods-logo{
+	width: .8rem;
+	height: .8rem;
+	margin-right: .3rem;
+}
+.order-desc > li .goods-info{
+	display: flex;
+	flex:1;
+	justify-content: space-between;
+}
+.order-desc > li .goods-info .price{
+	font-weight: bold;
+}
+.order-desc > li .order-discount{
+	display: flex;
+	justify-content: space-between;
+}
+.order-discount > p:nth-of-type(1){
+	display: flex;
+	width: 50%;
+}
+.order-discount > p:nth-of-type(2){
+	width: 50%;
+	font-weight: bold;
+	text-align: right;
+}
+.order-discount > p:nth-of-type(1) > span{
+	display: block;	
+}
+.order-discount > p:nth-of-type(1) > span:first-child{
+	width: 25%;
+	margin-top: -.02rem;
+	margin-right: .2rem;
+	padding:.12rem .1rem .1rem ;
+	background-color: #d9f1fe;
+	color: #58bdf4;
+	font-size: .22rem;
+	text-align: center;
+	overflow: hidden;
+}
+.order-discount > p:nth-of-type(1) > span:last-child{
+	vertical-align: middle;
+	line-height: .45rem;
+}
+.bz > p:nth-of-type(1) > span:first-child{
+	background-color: #f8c798;
+	color: #c8996b;
+}
+.mz > p:nth-of-type(1) > span:first-child{
+	background-color: #befdb9;
+	color: #73d76d;
+}
+.order-desc > li > span:nth-of-type(2){
+	font-size: .24rem;
+}
+.order-desc > li.sum span >i{
+	font-size: .35rem;
+	vertical-align: middle;
+}
+.order-desc > li.sum span{
+	font-size: .26rem;
+}
+.order-desc > li.sum span > em{	
+	font-size: .36rem;
+}
+.order-desc > li.sum span > i{
+	margin-left: .1rem;
+	font-size: .26rem;
+}
+/*main end*/
+
+/*footer start*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index:99;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .22rem;
+}
+footer .f-msg{
+	width: 100%;
+	height: .4rem;
+	text-align: center;
+	line-height: .4rem;
+	color:#444;
+	background-color: #ffe6b7;
+}
+footer .shopping{
+	position: relative;
+	width: 100%;
+	height: 1.1rem;
+	background-color: #333;
+}
+footer .shopping .s-info{
+	width: 100%;
+	height: 100%;
+}
+footer .shopping .s-info .s-icon{
+	position: absolute;
+	top: -.3rem;
+	left: .3rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius:50%;
+	border:.1rem solid #444;
+	background-color: #363636;
+	text-align: center;
+	line-height: .9rem;
+	color:#5f5f63;
+}
+footer .shopping .s-info .s-icon.current{
+	background-image: linear-gradient(180deg, 
+		rgba(47, 207, 247, 0.88) 0%, 
+		rgba(47, 139, 247, 0.88) 50%, 
+		rgba(47, 70, 247, 0.88) 100%), 
+		linear-gradient(#2ff78d, #2ff78d);
+	color:#fff;
+}
+footer .shopping .s-info .s-icon > i{	
+	font-size: .45rem;
+}
+footer .shopping .s-info .s-icon > em.num{
+	position: absolute;
+	top: -..8rem;
+	right: -.2rem;
+	width: .4rem;
+	height: .4rem;
+	border-radius:50%;
+	color:#fff;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .4rem;
+	background-image: linear-gradient(180deg, 
+		rgba(247, 155, 47, 0.88) 0%, 
+		rgba(247, 47, 47, 0.88) 100%), 
+		linear-gradient(#f7f52f, #f7f52f);
+	box-shadow: 0px 3px 8px 0px rgba(247, 77, 47, 0.97);
+}
+footer .shopping .s-info .s-desc{	
+	padding:.2rem 0;
+	display: flex;
+	flex-wrap:wrap;
+	height: 100%;
+	align-items:center;
+	margin-left: 1.6rem;
+}
+footer .shopping .s-info .s-desc >p{
+	width: 100%;
+	height: .4rem;
+	line-height: .4rem;
+	color:#999;
+}
+footer .shopping .s-info .s-desc >p.price{
+	color:#fff;
+	font-size: .3rem;
+}
+footer .shopping .s-info .s-desc >p.price > span{
+	/*font-weight: bold;*/
+	color:#fff;
+	font-size: .35rem;
+}
+footer .shopping .s-info .s-desc >p.price > del{
+	margin-left: .1rem;
+	color:#999;
+	font-weight:normal;
+	font-size: .24rem;
+}
+footer .shopping .s-pay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.46rem;
+	height: 100%;
+	line-height: 1.1rem;
+	background-color: #4f4f4f;
+	font-size: .3rem;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+}
+footer .shopping .s-pay.current{
+	background-color: #0f92ee;
+}
+
+/*支付成功 开始*/
+.paysucc{
+	overflow: hidden;
+	width: 100%;
+	position: fixed;
+	top: 100%;
+	left: 0;
+	bottom: 100%;
+	/*height: 8rem;*/
+	z-index: 10000;
+	transition:.4s;
+}
+.paysucc.on{
+	top: 0;
+	bottom: 0;
+	transition:.3s;
+}
+/*.paysucc.off{
+	top: 60%;
+	bottom: -60%;
+}*/
+.paysucc .bg{
+	width: 100%;
+	height: 40%;
+	background: rgba(0, 0, 0, 0.6);	
+}
+.paysucc .bg.on{
+	background-color: transparent;
+}
+.paysucc .paysucc_main{
+	height: 60%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #fff;
+} 
+.paysucc .paysucc_main .paysucc_main_top{
+	height: 1.70rem;
+	width: 100%;
+	border-bottom: 0.01rem solid #d8d8d8;
+	position: relative;
+}
+.paysucc .paysucc_main .paysucc_main_top .help{
+	width: 0.31rem;
+	height: 0.31rem;
+	position: absolute;
+	top:0.5rem;
+	right: 0.5rem;
+}
+.paysucc .paysucc_main .paysucc_main_top .jiaoyi{
+	width: 2.2rem;
+	height: 1.7rem;
+	margin: 0 auto;
+	padding-top: 0.58rem;
+	padding-bottom: 0.22rem;
+	box-sizing: border-box;
+	justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+}
+.paysucc .paysucc_main .paysucc_main_top .jiaoyi>h2{
+	font-size: 0.32rem;
+	color: #070707;
+}
+.paysucc .paysucc_main .paysucc_main_top .jiaoyi>h3{
+	font-family: "San Francisco Display";
+	font-size: 0.2rem;
+	color: #555;
+}
+.paysucc_main_bottom{
+	width: 100%;
+	/*height: 6rem;*/
+	background-color: #fff;
+	padding-top: 0.49rem;
+	box-sizing: border-box;
+}
+.paysucc_main_bottom>h2{
+	text-align: center;
+	font-size: 0.32rem;
+	color: #777;
+	margin-bottom: 0.25rem;
+}
+.paysucc_main_bottom>h3{
+	text-align: center;
+	font-size: 0.4rem;
+	color: #f82963;
+	margin-bottom: 0.5rem;
+}
+.paysucc_main_bottom .success{
+	display: block;
+	width: 1.2rem;
+	height: 1.2rem;
+	margin: 0 auto 0.62rem;
+}
+.paysucc_main_bottom>ul{
+	margin: 0 auto .8rem;
+	width: 4.75rem;
+	height: 0.41rem;
+	display: flex;
+	justify-content: space-between;
+}
+.paysucc_main_bottom>ul>li{
+	width: 1.32rem;
+	height: 100%;
+	background-color: #3dbbfd;
+	border-radius: 0.2rem;
+	font-size: 0.2rem;
+	line-height: 0.41rem;
+	text-align: center;
+}
+.paysucc_main_bottom>ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: .41rem;
+	color: #FFF;
+}
+.paysucc_main_bottom>h4{
+	text-align: center;
+	font-size: 0.26rem;
+	color: #ec6d83;
+	/*margin-bottom: 0.43rem;*/
+}
+.paysucc_main_bottom>img{
+	display: block;
+	margin: .2rem auto 0;
+	width: 0.3rem;
+	height: 0.3rem;
+	padding:.1rema;
+}
+
+/*支付成功 结束*/
+/*footer end*/

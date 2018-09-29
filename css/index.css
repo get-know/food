@@ -1,0 +1,347 @@
+@import url("base.css");
+/*header start*/
+header{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: .88rem;
+	padding:0 .24rem;
+	background-color: #0f92ee;
+	box-sizing:border-box;
+	z-index:99;
+}
+header .h-address{
+	display: flex;
+	justify-content:space-between;
+	width: 1.68rem;
+	height: .36rem;
+}
+header .h-address >i{
+	font-size: .34rem;
+	color:#fff;
+}
+header .h-address > span{
+	line-height: .36rem;			
+	font-size: .28rem;
+	color:#fff;
+}
+header .h-search{
+	position: relative;
+	width: 4.96rem;
+	height: .45rem;
+}
+header .h-search >a {
+	float: left;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	border-radius: 23px;
+	text-indent:.16rem;
+}
+header .h-search a > i{
+	position: absolute;
+	right: .2rem;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*header end*/
+
+
+/*main  start*/
+.main{
+	width: 100%;
+	padding:0 .25rem;
+	margin-top: .88rem;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.main .banner{
+	overflow: hidden;
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 4rem;
+	margin:0 auto;
+	margin-top: .25rem;	
+}
+.main .banner .prev,
+.main .banner .next{
+	position: absolute;
+	width: .5rem;
+	height: .8rem;
+}
+.main .banner .prev{
+	top: 40%;
+	left: .2rem;
+}
+.main .banner .next{
+	top: 40%;
+	right: .2rem;
+}
+.main .banner .prev > i,
+.main .banner .next > i{
+	float: left;
+	font-size: .6rem;
+	color:#eee;
+	line-height: 1rem;
+}
+.main .banner > .pic{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	height: 4rem;
+}
+.main .banner > .pic >div{
+	position: relative;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-shrink: 0;
+	float: left;
+	width: 100%;
+}
+
+.main .banner > img{
+	/*position: absolute;*/
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.main .banner > .btns{
+	position: absolute;
+	bottom: .38rem;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	width: 1.2rem;
+	height: .15rem;
+}
+.main .banner > .btns li{
+	width: .4rem;
+	height: 100%;
+	margin-right: 0.2rem;
+	background-color: #ccc;
+	border-radius:.1rem;
+}
+.main .banner > .btns li.current{
+	background-color: #0f92ee;
+}
+.main .category{
+	/*float: left;*/
+	display: flex;	
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.main .category li{
+	display: flex;	
+	flex-direction: column;
+	justify-content: space-between;
+	width: 25%;
+	margin-top: .3rem;
+	color:#747474;
+}
+.main .category li a{
+	display: block;
+	width: 1.36rem;
+	margin:0 auto;
+	text-align: center;
+}
+.main .category li a > img{
+	width: 100%;
+	height: 1.36rem;
+	border-radius:50%;
+}
+.main .category li .desc{
+	margin-top: .2rem;
+	font-size: .22rem;
+}
+
+.main .advert{
+	width: 100%;
+	height: 3.5rem;
+	margin:.44rem 0;
+}
+.main .advert > a > img,
+.main .advert > a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 15px;
+}
+.main.seller{
+	width: 100%;
+	margin-top: .5rem;
+	padding:0;
+}
+.seller .bg{
+	width: 100%;
+	padding:0 .25rem;
+}
+.seller .bg h1{	
+	font-size: .36rem;	
+	color: #2f70ea;
+	text-align: center;
+}
+.seller .bg .tool{
+	display: flex;
+	justify-content: space-between;
+	padding:.3rem 0;
+	font-size: .24rem;
+}
+.seller .bg .tool li{
+	line-height: .28rem;
+}
+.seller .bg .tool li>i{
+	vertical-align: middle;
+}
+.seller .bg .tool .hot{
+	font-weight: bold;
+}
+.seller .con-hidden{
+	overflow-y: auto;
+	height: 11.2rem;	
+}
+.seller .con-hidden::-webkit-scrollbar{
+	width:0;
+}
+.seller .content{
+	width: 100%;
+	padding:.25rem .25rem .98rem .25rem;
+	background-color: #f4f4f4;
+}
+.seller .content li{	
+	width: 100%;
+	padding:.25rem;
+	margin-bottom:.25rem;
+	background-color: #fff;
+	border-radius: .15rem;
+	box-shadow: 0px 6px 7px 1px rgba(181, 188, 196, 0.45);
+}
+.seller .content li >a{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.seller .content li .s-logo{
+	width: 1.35rem;
+	height: 1.35rem;
+	margin-right: .2rem;
+}
+
+.seller .content li .s-logo > img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.seller .content li .s-desc{
+	flex:1;
+	/*width: 5rem;*/
+	font-size: .28rem;
+	color:#444;
+}
+.seller .content li .s-desc h2{
+	font-weight: bold;
+	font-size: .28rem;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+}
+.seller .content li .s-desc p.msg{
+	display: flex;
+	justify-content: space-between;
+	margin:.15rem 0;
+	font-size: .22rem;
+}
+.seller .content li .s-desc p.msg span > img{
+	width: 1.19rem;
+	height: .21rem;
+}
+.seller .content li .s-desc p.price{
+	margin-top:.1rem;
+}
+.seller .content li .s-desc p.discount{
+	margin-top: .15rem;
+}
+
+.seller .content li .s-desc p.discount .hot{
+	overflow: hidden;
+	display: inline-block;
+	/*padding:.02rem .05rem;*/
+	width: 15%;
+	height: .3rem;
+	margin-right: .3rem;
+	line-height: .32rem;
+	background-color: #fed7e5;
+	color: #ef4380;
+	font-size: .18rem;
+	text-align: center;
+}
+.seller .content li .s-desc p.discount .hot1{
+	color: #58bdf4;
+	background-color: #d9f1fe;	
+}
+.seller .content li .s-desc p.price,
+.seller .content li .s-desc p.discount{
+	color:#8d8d8d;
+	font-size: .22rem;	
+}
+.seller .content li .s-desc p.discount >span{
+	display: inline-block;
+	line-height: .3rem;
+	vertical-align: middle;
+}
+/*main  end*/
+
+/*footer start*/
+footer{	
+	position: fixed;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	height: .98rem;
+	padding:0 .5rem;
+	background-color: #fff;
+	color:#444;
+}
+footer ul.tab{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: .98rem;
+	
+}
+footer .tab li{
+	width: .56rem;
+	height: .64rem;
+	font-size: .22rem;
+	color:#444;
+	text-align: center;
+}
+footer .tab li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+footer .tab li a.hot{
+	color: #6285ee;
+}
+footer .tab li a >i{
+	font-size: .36rem;
+}
+footer .tab li a > p{
+	width: 100%;
+	margin-top: .1rem;
+	font-size: .18rem;
+	font-weight: bold;	
+}
+
+/*footer end*/

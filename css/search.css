@@ -1,0 +1,86 @@
+@import url("base.css");
+body{
+	background-color: #fff;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding:.25rem;
+}
+header .back > a{
+	display: block;
+}
+header .back a > i{
+	float: left;
+	font-size: .4rem;
+	color:#aaa;
+	line-height: .6rem;
+}
+header .search{
+	position: relative;
+	width: 78%;
+	height: .54rem;
+}
+header .search >input{
+	float: left;
+	outline: none;
+	width: 100%;
+	height: 100%;
+	border:none;
+	font-size: .28rem;
+	padding-left:.6rem;
+	background-color: #eee;
+	border-radius:.3rem;
+}
+header .search > i{
+	position: absolute;
+	top: .15rem;
+	left: .15rem;
+	font-size: .28rem;
+	color:#777;
+}
+header .btn{
+	padding-right: .1rem;
+	font-size: .3rem;
+	color:#666;
+	line-height: .6rem;
+}
+.main{
+	padding:.35rem;
+}
+.main .history{
+	display: flex;
+	justify-content:space-between;
+	width: 100%;	
+	margin-top: .2rem;
+	color:#666;
+}
+.main .history > span,
+.main .hot > span{
+	font-size: .3rem;
+	
+}
+.main .h-list{
+	width: 100%;
+	padding:.3rem 0;
+}
+.main .h-list >li{
+	display: inline-block;
+	padding:.2rem;
+	font-size: .24rem;
+	background-color: #eee;
+	color:#555;
+}
+
+.main .hot{
+	color:#666;
+}
+
+
+
+
+
+
+
+

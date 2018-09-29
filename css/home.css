@@ -1,0 +1,233 @@
+@import url("base.css");
+
+/*header start*/
+header{
+	width: 100%;
+	height: 3.66rem;
+	padding:0 .25rem;
+	background-color: #0f92ee;
+}
+header .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: .98rem;	
+	color:#fff;
+	
+}
+header .title >span{
+	font-size: .3rem;
+}
+header .title > a{
+	display: block;
+	color:#fff;
+}
+header .title > a > i{
+	float: left;
+	font-size: .35rem;
+}
+header .title > a > img{
+	display: block;
+	width: .30rem;
+	height: .34rem;
+}
+
+
+header .user-msg{
+	display: flex;
+	justify-content: space-between;
+	padding:.25rem;
+	background-color: #fff;
+	border-radius:.15rem;
+}
+header .user-msg .u-img{
+	width: 1.22rem;
+	height: 1.22rem;
+	margin-right: .3rem;
+}
+header .user-msg .u-img > img{
+	width: 100%;
+	height: 100%;
+	border-radius:50%;
+}
+header .user-msg .u-msg{
+	display: flex;
+	flex:1;
+	flex-wrap:wrap;
+}
+.user-msg .u-msg p.username{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	line-height: .6rem;	
+}
+.user-msg .u-msg p.username > span{
+	display: block;
+}
+.user-msg .u-msg p.username .name{
+	font-weight: bold;
+	font-size: .32rem;
+	color: #0f92ee;
+	
+}
+.user-msg .u-msg p.username .phone{
+	display: flex;
+	font-size: .26rem;
+	color:#777;
+	margin-right: .08rem;
+}
+.user-msg .u-msg p.username .phone > img{
+	width: .28rem;
+	height: .4rem;
+	margin-right: .1rem;
+	margin-top: .07rem;
+	vertical-align: middle;
+}
+.user-msg .u-msg p.explain{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: .26rem;
+	color:#777;
+}
+.user-msg .u-msg p.explain > span{
+	line-height: .58rem;
+}
+.user-msg .u-msg p.explain >a{
+	display: block;
+}
+.user-msg .u-msg p.explain >a > i{
+	color:#777;
+	font-size: .3rem;
+	line-height: .6rem;
+	/*vertical-align: middle;*/
+}
+/*header end*/
+
+/*main start*/
+.main{
+	position: relative;
+	width: 100%;
+	height: 9rem;
+	padding:.25rem;
+	background-color: #f5f5f5;
+}
+.main .wallet{
+	position: relative;
+	left: 0;
+	top:-.92rem;
+	width: 100%;
+	padding:.25rem;
+	border-radius:.15rem;
+	background-color: #fff;
+	box-shadow: 0px 2px 13px 0px rgba(207, 207, 207, 0.54)
+}
+.main .wallet p.num,
+.main p.desc{
+	display: flex;
+	justify-content: space-between;	
+	text-align: center;
+}
+.main p.desc{
+	margin-top: .3rem;
+}
+.main .wallet p.num > span{
+	width: 20%;
+	font-size: .2rem;
+	color:#777;
+}
+.main .wallet p.num > span >em{
+	margin-right: .03rem;
+	color: #f63787;
+	font-size: .3rem;
+}
+.main .wallet p.desc > span{
+	width: 20%;
+	margin-left: -.05rem;
+	font-size: .24rem;
+	color:#666;
+}
+
+.main .msg{
+	width: 100%;
+	margin-top: -.6rem;
+	padding:.1rem .25rem;
+	border-radius:.15rem;
+	background-color: #fff;
+	box-shadow: 0px 2px 13px 0px rgba(207, 207, 207, 0.54)
+}
+.main .msg > li{	
+	width: 100%;
+	padding:.25rem 0;	
+	border-bottom:.01rem solid #eee;
+}
+.main .msg > li:last-child{
+	border:none;
+}
+.main .msg > li > a{
+	display: flex;
+	justify-content: space-between;
+	font-size: .24rem;
+	color:#777;
+}
+.main .msg > li > a p{
+	font-size: .26rem;
+}
+.main .msg > li > a p > img{
+	display: inline-block;
+	width: .45rem;
+	height: .5rem;
+	margin-right: .14rem;
+	vertical-align: middle;
+}
+.main .msg > li > a > i{
+	line-height: .47rem;
+}
+/*main end*/
+
+
+/*footer start*/
+footer{	
+	position: fixed;
+	bottom:0;
+	left: 0;
+	width: 100%;
+	height: .98rem;
+	padding:0 .5rem;
+	background-color: #fff;
+	color:#444;
+}
+footer ul.tab{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: .98rem;
+	
+}
+footer .tab li{
+	width: .56rem;
+	height: .64rem;
+	font-size: .22rem;
+	color:#444;
+	text-align: center;
+}
+footer .tab li a{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+footer .tab li a.hot{
+	color: #6285ee;
+}
+footer .tab li a >i{
+	font-size: .36rem;
+}
+footer .tab li a > p{
+	width: 100%;
+	margin-top: .1rem;
+	font-size: .18rem;
+	font-weight: bold;	
+}
+
+/*footer end*/

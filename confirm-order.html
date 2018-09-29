@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	    <title>确认订单</title>
+	    <link rel="stylesheet" href="css/confirm-order.css" />
+	    <link rel="stylesheet" href="http://at.alicdn.com/t/font_803695_a8sjk5a86wv.css" />
+	    <script src="js/rem.js"></script>
+	</head>
+	<body>
+		<!--header start-->
+		<header>
+			<div class="title">
+				<a href="shop.html"><i class="iconfont icon-qianjinxiayige"></i></a>
+				<span>确认订单</span>
+				<i></i>
+			</div>
+			<div class="order-info">
+				<p class="address1">订单配送至  <span>公司</span></p>
+				<p class="address2">太原市小店区学府街凯通大厦5层 <i class="iconfont "></i></p>
+				<p class="name">
+					<span class="">王(先生)</span>
+					<span class="phone">18135834403</span>
+				</p>
+			</div>	
+			
+			<div class="wallet">
+				<a href="#">
+					<p class="num">
+						<span class="">送达时间</span>					
+						<span class="time">约11点送达 <i class="iconfont icon-qianjin"></i>	</span>					
+					</p>
+				</a>
+				<a href="#">
+					<p class="desc">
+						<span>支付方式</span>
+						<span class="pay-method">在线支付<i class="iconfont icon-qianjin"></i>	</span>						
+					</p>
+				</a>
+			</div>
+		</header> 
+		<!--header end-->
+		
+		<!--main start-->
+		<section class="main">
+			
+			<!--order-desc  start-->
+			<ul class="order-desc">
+				<li>运城大盘鸡</li>
+				<li>
+					<p class="goods-logo">
+						<img src="img/seller.png" alt="" />
+					</p>
+					<p class="goods-info">
+						<span class="">大盘鸡(单人份)</span>
+						<span class="">×<em>3</em></span>
+						<span class="price">&yen; 30</span>
+					</p>
+				</li>
+				<li class="order-discount">
+					<p>
+						<span>商家</span>
+						<span>配送费</span>
+					</p>
+					<p>+ &yen; 5</p>
+				</li>
+				<li class="order-discount bz">
+					<p>
+						<span>包装</span>
+						<span>餐盒</span>
+					</p>
+					<p>+ &yen; 1</p>
+				</li>
+				<li class="order-discount mz">
+					<p>
+						<span>满赠</span>
+						<span>可乐1份</span>
+					</p>
+					<p>&yen; 0</p>	
+				</li>
+				<li class="order-discount yh">
+					<p>
+						<span>优惠</span>
+						<span>在线支付立减5元</span>
+					</p>
+					<p>- &yen; 5</p>
+				</li>
+				<li>
+					<span>订单备注</span>
+					<span>口味、偏好</span>
+				</li>
+				<li>
+					<span>发票信息</span>
+					<span>本店暂不支持开发票</span>
+				</li>
+				<li>
+					<span>红包</span>
+					<span>无可用红包</span>
+				</li>
+				<li class="sum">
+					<span>优惠说明<i class="iconfont icon-wenhao"></i></span>
+					<span>小计<i>&yen;</i><em>31</em></span>
+				</li>
+			</ul>
+			<!--order-desc  end-->
+			
+		</section>		
+		<!--main end-->
+		
+		<!--footer start-->
+		<footer>
+			<div class="f-msg">已减5元</div>
+			<div class="shopping">
+				<div class="s-info">
+					<!--当有商品时，给s-icon添加类名current-->
+					<div class="s-icon current">
+						<i class="iconfont icon-gouwuche"></i>
+						<em class="num">3</em>
+					</div>
+					<div class="s-desc">
+					<!--当满足条件时，给p添加类名price,并且计算价格-->						
+						<p class="price">&yen; <span> 31</span> <del>&yen; 36</del></p>
+						<p class="">另需配送费<span>1</span>元</p>
+					</div>
+				</div>
+					<!--当满足条件时，给s-pay添加类名current-->				
+				<a href="#" class="s-pay current">去 结 算</a>
+			</div>
+			
+			
+			
+		</footer>
+		<!--footer end-->
+		
+		<!--支付成功  开始-->
+		<section class="paysucc">	
+			<div class="bg"></div>
+			<div class="paysucc_main">
+				<div class="paysucc_main_top">
+					<div class="jiaoyi">
+						<h2>交易成功</h2>
+						<h3>JIAOYICHENGGONG</h3>
+					</div>
+					<div class="help iconfont icon-ICONbiaozhun_fuzhi-"></div>
+				</div>
+				<div class="paysucc_main_bottom">
+					<h2>您本次消费共计</h2>
+					<h3>￥31</h3>
+					<img class="success" src="img/success.png" alt="">
+					<ul>
+						<li><a href="index.html">返回首页</a></li>
+						<li><a href="order.html">订单跟踪</a></li>
+						<li><a href="cate.html">继续逛逛</a></li>
+					</ul>
+					<h4>欢迎亲下次光临哦~</h4>	
+					<img src="img/back.png" alt="" id="back"/>
+				</div>
+			</div>
+		</section>
+			
+		<!--支付成功  结束-->
+		
+	</body>
+</html>
+<script>
+	var oMain = document.querySelector('.main');
+var oPay = document.querySelector('footer .s-pay');
+var oBox = document.querySelector('.paysucc');
+var oBg = document.querySelector('.paysucc .bg');
+var flag = false;
+
+oPay.onclick = function(){
+	oBox.className = 'paysucc on';
+	oBg.className = 'bg';
+	oMain.className+= ' on';
+}
+back.onclick = function(){	
+	oBox.className = 'paysucc';
+	oBg.className += ' on';	
+	
+	setInterval('window.location.href="index.html"',500)
+	
+}
+</script>

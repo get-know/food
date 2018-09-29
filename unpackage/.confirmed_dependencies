@@ -1,0 +1,53 @@
+{
+  "index.html": {
+    "refer": [
+      "search.html",
+      "order.html",
+      "cate.html",
+      "home.html",
+      "shop.html"
+    ]
+  },
+  "search.html": {
+    "refer": [
+      "index.html"
+    ]
+  },
+  "home.html": {
+    "refer": [
+      "index.html",
+      "order.html"
+    ]
+  },
+  "order.html": {
+    "refer": [
+      "home.html",
+      "index.html",
+      "shop.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "cate.html": {
+    "refer": [
+      "index.html",
+      "shop.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "shop.html": {
+    "refer": [
+      "cate.html",
+      "index.html",
+      "confirm-order.html"
+    ]
+  },
+  "confirm-order.html": {
+    "refer": [
+      "shop.html"
+    ]
+  }
+}

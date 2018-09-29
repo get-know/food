@@ -1,0 +1,471 @@
+@import url("base.css");
+
+/*header start*/
+header{
+	width: 100%;
+	height:2rem;
+	padding:0 .25rem;
+	background:url('../img/shop.png') no-repeat center/cover;
+}
+header > a.back{
+	display: block;
+}
+header > a.back > i{
+	float: left;
+	color:#fff;
+	font-size: .35rem;
+	line-height: .9rem;	
+}
+header .shop-logo{
+	position: absolute;
+	top: 1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 2rem;	
+	height: 1.88rem;
+	
+}
+header .shop-logo >img{
+	width: 100%;
+	height: 100%;
+	border-radius:.15rem;
+	box-shadow:0 0 .1rem .03rem #ddd;
+}
+/*header  end*/
+
+/*main start*/
+.main{
+	position: relative;
+	width: 100%;	
+	z-index:-1;	
+}
+.main .top-info{
+	display: flex;
+	flex-wrap:wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 3.1rem;
+	padding:.96rem .25rem .25rem;
+	background-color: #fff;
+	font-size: .24rem;
+	color:#777;
+	text-align: center;
+}
+.main .top-info > h1{
+	width: 100%;
+	margin-top: .2rem;
+	color:#444;
+	font-size: .3rem;
+	font-weight: bold;
+}
+.main .top-info > p.desc{
+	display: flex;
+	justify-content: space-between;
+	width: 70%;	
+	margin:0 auto;
+}
+.main .top-info > p.desc >span{
+	color:#555;
+}
+.main .discount{
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+	height: .35rem;
+	line-height: .35rem;
+	margin:0 auto;
+	padding:0 .2rem;
+	border:.01rem solid #ccc;
+	font-size: .2rem;
+}
+.main .discount > span > i{
+	font-size: .18rem;
+}
+.main .bg{
+	width: 100%;
+	height: .2rem;
+	background-color: #f4f1f1;
+}
+.main .order{
+	display: flex;
+	justify-content: space-between;	
+	width: 100%;
+	height: .8rem;
+}
+.main .order .tool{
+	display: flex;
+	align-items: center;
+	width: 33.3%;
+	height: 100%;
+	text-align: center;
+	background-color: #fff;
+	font-size: .26rem;	
+}
+.main .order .tool > a{
+	display: block;
+	margin:0 auto;
+	padding-top:.18rem;
+	line-height: .6rem;
+	/*padding-bottom:.08rem;*/
+	text-align: center;
+	color:#777;
+}
+.main .order .tool >.current{
+	color:#444;
+	font-weight: bold;
+	border-bottom:.05rem solid #0f92ee;
+}
+/*order-list start*/
+.main .order-list{
+	position: absolute;
+	top: 4.1rem;
+	bottom:0;
+	display: flex;
+	/*flex-wrap:wrap;*/
+	width: 100%;
+	border-top:.02rem solid #eee;
+	background-color: #fff;
+	padding:0 .25rem;
+}
+.main .order-list.on{
+	height: 6.5rem;
+	overflow: hidden;
+}
+.main .order-list .l-left{
+	/*position: relative;
+	top: 0;
+	bottom:0;*/
+	overflow-y:auto ;
+	width: 20%;
+	height: 11.8rem;
+	margin-top: .25rem;
+	margin-right: .24rem;
+	padding-bottom:1.5rem;
+	background-color: #f4f1f1;
+	font-size: .24rem;
+}
+.main .order-list .l-right{
+	/*position: absolute;
+	top:0 ;
+	bottom:0;
+	right:0;*/
+	overflow-y:auto;
+	width: 75%;
+	height:11.8rem;
+	padding-right:.02rem;
+	padding-bottom:1.2rem;
+	font-size: .22rem;
+}
+.main .order-list .l-left::-webkit-scrollbar,
+.main .order-list .l-right::-webkit-scrollbar{
+	width:0;
+}
+.main .order-list .l-left > li{
+	width: 100%;
+	height: .88rem;
+	line-height: .88rem;
+	text-align: center;
+}
+.main .order-list .l-left > li >a{
+	display: block;
+	color:#666;
+}
+.main .order-list .l-left > li >a.current{
+	background-color: #0f92ee;
+	color:#fff;
+}
+
+.main .order-list .l-right > li{
+	padding:.25rem 0 .2rem 0;
+	border-bottom:.01rem solid #eee;
+}
+.l-right > li{
+	display: flex;
+	justify-content: space-between;
+}
+.l-right > li > .logo{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-right: .2rem;
+}
+.l-right > li > .logo > img{
+	width: 100%;
+	height: 100%;
+}
+.l-right > li > .info{
+	display: flex;
+	flex-wrap:wrap;
+	align-items:center;
+	flex:1;
+	height: 1.6rem;
+}
+.l-right > li > .info h1{
+	width: 100%;
+	font-size: .28rem;
+	color:#333;
+	font-weight: bold;
+}
+.l-right > li > .info p.tips{
+	width: 100%;
+}
+.l-right > li > .info p.desc{
+	width: 100%;
+}
+.l-right > li > .info p.desc>span{
+	margin-right:.3rem;
+}
+.l-right > li > .info div.price{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	
+}
+.l-right > li > .info div.price >span{
+	font-size: .26rem;
+	color: lightcoral;
+	font-weight: bold;
+	line-height: .4rem;
+}
+.info div.price .change{
+	display: flex;
+	justify-content: space-between;
+	/*width: 1.2rem;*/
+	height: .4rem;
+}
+.info div.price .change >span{
+	display: block;
+	line-height: .36rem;
+	padding:0 .15rem;
+}
+.info div.price .change > img{
+	display: block;
+	width: .4rem;
+	height: .4rem;
+}
+.info div.price .change > img.remove{
+	/*opacity:0;*/
+	display: none;
+}
+/*order-list start*/
+
+/*shop-desc  start*/
+.shop-desc{
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+	bottom: -100%;
+	width: 100%;
+	height: 0;
+	background-color: #fff;
+	transition:.5s;
+	opacity:0;
+}
+.shop-desc.on{
+	top: 0;
+	bottom:0;
+	height: 100%;
+	transition:.5s;
+	opacity: 1;
+}
+.shop-desc .shop-img{
+	position: relative;
+	width: 100%;
+	height: 55%;
+	background: url('../img/shop-desc.webp') no-repeat center/cover;
+}
+.shop-desc .shop-img .btn{
+	position: absolute;
+	right: 0.2rem;
+	top: 0.2rem;
+	width: .55rem;
+	height: .55rem;
+}
+.shop-desc .shop-img .btn >i{
+	float: left;
+	font-size: .55rem;
+	color:#fff;
+}
+.shop-desc .shop-info{
+	width: 100%;
+	height: 40%;
+	padding:0 .25rem;
+}
+.shop-desc .shop-info >h1{
+	margin-top: .4rem;
+	font-size: .4rem;
+	color:#333;
+}
+.shop-desc .shop-info >p.desc{
+	margin:.15rem 0;
+	font-size: .24rem;
+	color:#777;
+}
+.shop-desc .shop-info > .order-desc{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.shop-info > .order-desc .price{
+	/*width: 70%;*/
+	font-size: .24rem;
+}
+.shop-info > .order-desc .price span{
+	color:#ff5d45;
+}
+.shop-info > .order-desc .price span:first-child{
+	font-size: .2rem;
+}
+.shop-info > .order-desc .price span:first-child >em{
+	font-size: .35rem;
+}
+.shop-info > .order-desc .price span.del{
+	margin:0 .15rem;
+	color:#777;
+}
+.order-desc .price span.discount{
+	display: inline-block;
+	padding:.02rem .04rem;
+	border:.02rem solid #fbc3ba;
+}
+
+
+.order-desc .change{
+	display: flex;
+	justify-content: space-between;
+	/*width: 1.2rem;*/
+	height: .4rem;
+}
+.order-desc .change >span{
+	display: block;
+	line-height: .36rem;
+	padding:0 .15rem;
+	font-size: .3rem;
+}
+.order-desc .change > img{
+	display: none;
+	width: .4rem;
+	height: .4rem;
+}
+.order-desc .change > img.add{
+	display: block;
+}
+
+/*shop-desc  end*/
+
+/*main end*/
+
+
+/*footer start*/
+footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index:99;
+	width: 100%;
+	height: 1.5rem;
+	font-size: .22rem;
+}
+footer .f-msg{
+	width: 100%;
+	height: .4rem;
+	text-align: center;
+	line-height: .4rem;
+	color:#444;
+	background-color: #ffe6b7;
+}
+footer .shopping{
+	position: relative;
+	width: 100%;
+	height: 1.1rem;
+	background-color: #333;
+}
+footer .shopping .s-info{
+	width: 100%;
+	height: 100%;
+}
+footer .shopping .s-info .s-icon{
+	position: absolute;
+	top: -.3rem;
+	left: .3rem;
+	width: 1rem;
+	height: 1rem;
+	border-radius:50%;
+	border:.1rem solid #444;
+	background-color: #363636;
+	text-align: center;
+	line-height: .9rem;
+	color:#5f5f63;
+}
+footer .shopping .s-info .s-icon.current{
+	background-image: linear-gradient(180deg, 
+		rgba(47, 207, 247, 0.88) 0%, 
+		rgba(47, 139, 247, 0.88) 50%, 
+		rgba(47, 70, 247, 0.88) 100%), 
+		linear-gradient(#2ff78d, #2ff78d);
+	color:#fff;
+}
+footer .shopping .s-info .s-icon > i{	
+	font-size: .45rem;
+}
+footer .shopping .s-info .s-icon > em.num{
+	display: none;
+	position: absolute;
+	top: -.1rem;
+	right: -.25rem;
+	width: .4rem;
+	height: .4rem;
+	border-radius:50%;
+	color:#fff;
+	font-size: .3rem;
+	text-align: center;
+	line-height: .4rem;
+	background-image: linear-gradient(180deg, 
+		rgba(247, 155, 47, 0.88) 0%, 
+		rgba(247, 47, 47, 0.88) 100%), 
+		linear-gradient(#f7f52f, #f7f52f);
+	box-shadow: 0px 3px 8px 0px rgba(247, 77, 47, 0.97);
+}
+footer .shopping .s-info .s-icon > em.num.on{
+	display: block;
+}
+footer .shopping .s-info .s-icon > i{	
+	font-size: .45rem;
+}
+footer .shopping .s-info .s-desc{
+	
+	padding:.2rem 0;
+	display: flex;
+	flex-wrap:wrap;
+	height: 100%;
+	align-items:center;
+	margin-left: 1.6rem;
+}
+footer .shopping .s-info .s-desc >p{
+	width: 100%;
+	height: .4rem;
+	line-height: .4rem;
+	color:#999;
+}
+footer .shopping .s-info .s-desc >p.price{
+	font-weight: bold;
+	color:#fff;
+	font-size: .3rem;
+}
+footer .shopping .s-pay{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 2.46rem;
+	height: 100%;
+	line-height: 1.1rem;
+	background-color: #4f4f4f;
+	font-size: .3rem;
+	font-weight: bold;
+	color:#fff;
+	text-align: center;
+}
+footer .shopping .s-pay.current{
+	background-color: #0f92ee;
+}
+/*footer end*/
